@@ -125,7 +125,7 @@ body{
   font-weight: 10;
   font-style: normal;
   color: #000000;
-  font-size: 42px;
+  font-size: 38px;
   font-style: light;
 }
 
@@ -155,6 +155,9 @@ body{
   color:var(--muted); 
 }
 
+@media (max-width:1023px){
+  .gallery{width:65%;}
+}
 
 @media (min-width:1024px){
   .panel{ padding:4vw 4vw; }
