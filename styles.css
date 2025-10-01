@@ -155,11 +155,11 @@ body{
   color:var(--muted); 
 }
 
-@media (max-width:1023px){
+@media (max-width:1080px){
   .gallery{width:95%;}
 }
 
-@media (min-width:1024px){
+@media (min-width:1081px){
   .panel{ padding:4vw 4vw; }
   .content{ padding:clamp(24px,2.8vw,56px); }
   .gallery{width:80%;}
