@@ -156,7 +156,7 @@ body{
 }
 
 @media (max-width:1023px){
-  .gallery{width:65%;}
+  .gallery{width:95%;}
 }
 
 @media (min-width:1024px){
