@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="slides/sparkling-heart_1f496 (1).png">
+  <title>LOVE CONSUMES US</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <!-- fixed full-screen background layer (updated by JS after Enter) -->
+  <div id="bg" aria-hidden="true"></div>
+
+  <!-- ENTER PAGE with background VIDEO -->
+  <section id="enter" class="enter" role="dialog" aria-labelledby="title" aria-modal="true">
+    <video
+      id="introVideo"
+      class="bgvid"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      poster="backgrounds/poster.jpg"
+    >
+      <source src="slides/3963420-hd_1920_1080_25fps (1).mp4" type="video/mp4" />
+      <!-- optional webm -->
+      <!-- <source src="backgrounds/intro.webm" type="video/webm" /> -->
+    </video>
+
+    <img src="slides/01.png" style="z-index: 10; width: 90%; height: auto;">
+
+    <div class="enter-inner" style="background-color: rgba(240, 248, 255, 0);">
+      <button id="enterBtn" class="btn">ENTER</button>
+    </div>
+  </section>
+
+  <!-- MAIN SITE (hidden until Enter) -->
+  <main id="site" class="site" hidden>
+    <section class="panel" data-bg-index="0">
+      <div class="content">
+        <img src="slides/01.png" style="width: 70%; display: block; margin: auto;">
+        <p style="text-align: center;">❤️</p>
+        <p style="text-align: center;"><i><b>A New Play by Julia Saunders</b></i></p>
+        <br>
+        <p>
+          <b><i>LOVE CONSUMES US</i></b> is a multi-media merging of the two most iconic depictions of the deleterious 
+          effects of LOVE & FAME known to the western world: <b><i>Chekhov's the Seagull & the modern reality 
+          TV dating show. </i></b>
+          <br>
+          <br>
+          It is an absurdist reimagining of the play Chekhov ironically described as a 
+          comedy. The characters attempt to claw their way out of a complicated and secretly queer 
+          love web while maintaining their public image on the set of the UK reality TV sensation 
+          Pleasure Island, where tragedy is paraded for LOLs and likes.
+        </p>
+        <p style="text-align: center;">❤️</p>
+      </div>
+    </section>
+
+    <section class="panel" data-bg-index="1">
+      <div class="content">
+        <h2 class="sectionhead">Our Development</h2>
+        <p style="text-align: center;">❤️</p>
+        <p>
+          This project started out as a directorial concept: the Seagull, but set on the reality TV show Love Island. 
+          <br>
+          <br>
+          In 2023, as resident artists of the Performance Space at CSSMA,  Madeline Wall and Julia Saunders teamed up with multi-media artist Duncan Figurski to produce a workshop of the first using the original text of the Seagull, with a British slang remix by Julia Saunders, a self proclaimed Love Island scholar. 
+          <br>
+          <br>
+          “I was told about my own project by two teenage strangers on the subway.” -Julia Saunders. This workshop, coined the Seagull-Luv Island, culminated in two sold-out performances and a surprising amount of buzz for a one-act workshop. 
+          Realizing the potential of this idea, Julia set about to fully reimagine the Seagull as their own full length adaptation. Having spent the last two years developing the script under the mentorship of playwright Amy Berryman, it has become its own beast, a new play by the title LOVE CONSUMES US. 
+          <br>
+          <br>
+          Madeline and Julia are thrilled to be teaming up again to present the culmination of their efforts in an upcoming industry reading and can’t wait to share what they’ve come up with. 
+        </p>
+        <br>
+        <div id="gallery1" class="gallery" aria-label="Image gallery"></div>
+        <div class="video-wrapper" >
+          <iframe
+            src="https://www.youtube.com/embed/LvfW42Phejo?si=IfyGJOrECMPfKteJ"
+            title="YouTube video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <p style="text-align: center;">❤️</p>
+      </div>
+    </section>
+
+    <section class="panel" data-bg-index="1">
+      <div class="content">
+        <h2 class="sectionhead">News</h2>
+        <p style="text-align: center;">❤️</p>
+        <p style="text-align: center;">
+          Upcoming industry reading on Thursday, October 30th at 7 pm
+          <br>
+          <br>
+          Directed by <a href="https://www.madelinefwall.com/director-1" target="_blank">Madeline Wall</a> and <a href="https://www.juliasaunders.com/" target="_blank">Julia Saunders</a> 
+          <br>
+          <br>
+          Featuring: Anita Castillo-Halvorssen*, Ian Edlund, Nicola Gorham, Leila Kashani-Sabet, Francis MacCall, Jacob Presson*, Julia Saunders, Shannon Stowe*, Emily Tuckman*, Ryan Vo*, Blake Williams
+          <br>
+          <br>
+          *Actors appearing courtesy of Actors Equity Association
+        </p>
+        <p style="text-align: center;">❤️</p>
+
+      </div>
+    </section>
+
+    <section class="panel" data-bg-index="2">
+      <div class="content">
+        <h2 class="sectionhead">Contact Us</h2>
+        <p>
+          Please email us at <a href="mailto:juliaelizabeth223@gmail.com"> juliaelizabeth223@gmail.com </a>to inquire about the production.
+        </p>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <small>© Your Company</small>
+    </footer>
+  </main>
+
+  <script src="./main.js" defer></script>
+</body>
+</html>
