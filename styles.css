@@ -155,11 +155,6 @@ body{
   color:var(--muted); 
 }
 
-@media (min-width:768px){
-  .panel{ padding:6vw 5vw; }
-  .content{ padding:clamp(20px,3.2vw,48px); }
-  .gallery{width:65%;}
-}
 
 @media (min-width:1024px){
   .panel{ padding:4vw 4vw; }
@@ -171,7 +166,6 @@ body{
 .gallery{
   margin: auto;
   display: grid;
-  width:65%;
   height: auto;
   text-align: center;
   align-items: center;
