@@ -90,8 +90,7 @@ const GALLERY = {
       "/TV IN the Sky (1).jpg",
       "/TV in the Sky 2 (1).jpg",
       "/TV in the SKY 3 (1).jpg",
-      "/TV in the SKY 4 (1).jpg"
-      // add more filenames here…
+      "/TV in the Sky 4 (1).jpg"
     ]
   };
   
