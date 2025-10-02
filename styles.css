@@ -54,14 +54,6 @@ body{
   font-size:clamp(1.6rem,6vw,3rem); 
 }
 
-/* when autoplay isn’t allowed, we swap to a poster background and hide the <video> */
-.enter.no-autoplay {
-  background: url("backgrounds/intro-poster.jpg") center / cover no-repeat;
-}
-.enter.no-autoplay .bgvid {
-  display: none;                 /* removes the big play overlay entirely */
-}
-
 .tagline{ 
   color:var(--muted); 
   margin:0 0 1.25rem 0; 
