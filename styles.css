@@ -28,13 +28,7 @@ body{
   overflow:hidden;
 }
 
-.bgvid::-webkit-media-controls-start-playback-button {
-  display: none !important;
-  -webkit-appearance: none;
-}
-
 .bgvid{
-  pointer-events: none; /* keeps user from tapping to play */
   position:absolute; 
   inset:0;
   width:100%; 
