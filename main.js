@@ -114,3 +114,33 @@ const GALLERY = {
   // Call after your DOM is ready (e.g., after Enter reveals the site)
   renderGallery(GALLERY);
   
+
+  // Try autoplay inline; if it fails (mobile/low power/etc), use poster instead
+async function ensureIntroAutoplayOrPoster() {
+  // Respect prefers-reduced-motion as "no autoplay"
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduceMotion) {
+    enter.classList.add("no-autoplay");
+    return;
+  }
+
+  if (!video) return;
+  try {
+    // some browsers require a direct play() call even with autoplay attr
+    await video.play();
+    // success: keep video visible
+  } catch (e) {
+    // blocked: hide video, let CSS show the poster background
+    enter.classList.add("no-autoplay");
+    // also stop/unload to save battery
+    try {
+      video.pause();
+      video.removeAttribute("src");
+      while (video.firstChild) video.removeChild(video.firstChild);
+      video.load();
+    } catch {}
+  }
+}
+
+// run as soon as DOM is ready
+document.addEventListener("DOMContentLoaded", ensureIntroAutoplayOrPoster);
